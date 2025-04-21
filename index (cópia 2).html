@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcos Xavier - Desenvolvedor Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .typing::after {
+      content: '|';
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    .floating-icons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .floating-icons span {
+      position: absolute;
+      display: block;
+      color: rgba(255,255,255,0.1);
+      animation: floatIcons 20s linear infinite;
+      font-size: 2rem;
+    }
+    @keyframes floatIcons {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-100vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Hero Hacker Style -->
+  <section class="relative text-center py-32 bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
+    <div class="floating-icons">
+      <span style="left:10%">💻</span>
+      <span style="left:30%">📱</span>
+      <span style="left:50%">🎧</span>
+      <span style="left:70%">🖥️</span>
+      <span style="left:90%">🧠</span>
+    </div>
+    <h2 class="text-5xl font-bold mb-4 typing relative z-10">Olá, eu sou Marcos Xavier</h2>
+    <p class="text-2xl text-green-400 relative z-10">Desenvolvedor Web & Automação de Sistemas</p>
+    <a href="#projetos" class="mt-10 inline-block bg-green-600 text-white px-8 py-3 rounded-2xl font-semibold shadow hover:bg-green-500 transition relative z-10">Ver Projetos</a>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="py-20 px-6 md:px-16 bg-gray-900">
+    <h3 class="text-4xl font-bold mb-12 text-center fade-in">Projetos em Destaque</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-gray-800 rounded-2xl shadow p-6 hover:shadow-green-500 transition fade-in">
+        <h4 class="text-xl font-semibold mb-2">MX Project (Portfólio)</h4>
+        <p class="text-gray-300 mb-4">Site portfólio moderno com HTML, CSS e JavaScript. Visual profissional e responsivo.</p>
+        <span class="inline-block bg-green-600 px-3 py-1 text-sm rounded-full mb-3">HTML / CSS / JS</span><br />
+        <a href="https://marcostrade01.github.io/mxproject-portfolio/" target="_blank" class="text-green-400 hover:underline">Ver Projeto</a>
+      </div>
+
+      <div class="bg-gray-800 rounded-2xl shadow p-6 hover:shadow-green-500 transition fade-in">
+        <h4 class="text-xl font-semibold mb-2">Bot de Trading MQL5</h4>
+        <p class="text-gray-300 mb-4">Robô de trade automático para MetaTrader 5 operando padrões de candle e zonas de S/R.</p>
+        <span class="inline-block bg-yellow-500 px-3 py-1 text-sm rounded-full mb-3">MQL5 / MetaTrader</span><br />
+        <a href="#" class="text-green-400 hover:underline">Código Privado</a>
+      </div>
+
+      <div class="bg-gray-800 rounded-2xl shadow p-6 hover:shadow-green-500 transition fade-in">
+        <h4 class="text-xl font-semibold mb-2">MilhasRadar</h4>
+        <p class="text-gray-300 mb-4">Sistema de busca automática de passagens aéreas baratas com foco em milhas e promoções.</p>
+        <span class="inline-block bg-blue-600 px-3 py-1 text-sm rounded-full mb-3">Python / Web Scraping / Flask</span><br />
+        <a href="#" class="text-green-400 hover:underline">Em desenvolvimento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section id="sobre" class="bg-black py-20 px-6 md:px-32">
+    <h3 class="text-4xl font-bold mb-8 text-center fade-in">Sobre Mim</h3>
+    <p class="text-gray-300 text-lg leading-relaxed fade-in">
+      Sou um apaixonado por tecnologia e soluções práticas. Comecei minha carreira como operador de máquinas pesadas e hoje atuo como desenvolvedor web e criador de sistemas automatizados. Já desenvolvi bots de trading, buscadores de passagens, sites responsivos e plataformas online. Meu objetivo é sempre entregar sistemas que realmente funcionem, com foco em resultado e eficiência.
+    </p>
+    <p class="text-gray-300 text-lg leading-relaxed mt-4 fade-in">
+      Estou disponível para projetos, freelas ou parcerias. Se você tem uma ideia e precisa tirá-la do papel, vamos conversar!
+    </p>
+    <div class="mt-10 text-center fade-in">
+      <a href="mailto:jhonesccmwm@gmail.com" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl shadow transition">Entre em Contato</a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center text-gray-500 text-sm py-8 bg-gray-900 border-t border-gray-700">
+    © 2025 Marcos Xavier. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
