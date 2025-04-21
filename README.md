@@ -45,6 +45,3 @@ Se você tem uma ideia, projeto ou proposta, vamos conversar:
 
 Este site é exclusivo de **Marcos Xavier**.  
 Proibido copiar, reproduzir ou redistribuir sem autorização.
-
----
-
