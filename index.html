@@ -74,7 +74,59 @@
     });
   </script>
 
-  <!-- Conteúdo HTML omitido aqui por espaço (mesmo conteúdo validado no canvas) -->
-  <!-- Inclui Hero, Projetos, Sobre e Formulário com visual neon -->
+  <section class="text-center py-32 px-4">
+    <h2 class="text-5xl font-bold mb-4 typing fade-in">Olá, eu sou Marcos Xavier</h2>
+    <p class="text-2xl text-green-400 fade-in">Desenvolvedor Web & Automação de Sistemas</p>
+    <p class="terminal-line fade-in mt-4">> Inicializando ambiente de desenvolvimento MX_Portfolio_2025...</p>
+    <a href="#projetos" class="mt-10 inline-block bg-green-600 text-white px-8 py-3 rounded-2xl font-semibold shadow hover:bg-green-500 transition fade-in">Ver Projetos</a>
+  </section>
+
+  <section id="projetos" class="py-20 px-6 md:px-16">
+    <h3 class="text-4xl font-bold mb-12 text-center fade-in">Projetos em Destaque</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-black border border-green-600 rounded-2xl shadow p-6 hover:shadow-green-500 transition fade-in">
+        <h4 class="text-xl font-semibold mb-2 text-green-400">MX Project (Portfólio)</h4>
+        <p class="text-green-300 mb-4">Site portfólio moderno com HTML, CSS e JavaScript. Visual profissional e responsivo.</p>
+        <span class="inline-block bg-green-800 px-3 py-1 text-sm rounded-full mb-3">HTML / CSS / JS</span><br />
+        <a href="https://marcostrade01.github.io/mxproject-portfolio/" target="_blank" class="text-green-400 hover:underline">Ver Projeto</a>
+      </div>
+      <div class="bg-black border border-green-600 rounded-2xl shadow p-6 hover:shadow-green-500 transition fade-in">
+        <h4 class="text-xl font-semibold mb-2 text-green-400">Bot de Trading MQL5</h4>
+        <p class="text-green-300 mb-4">Robô de trade automático para MetaTrader 5 operando padrões de candle e zonas de S/R.</p>
+        <span class="inline-block bg-yellow-600 px-3 py-1 text-sm rounded-full mb-3">MQL5 / MetaTrader</span><br />
+        <a href="#" class="text-green-400 hover:underline">Código Privado</a>
+      </div>
+      <div class="bg-black border border-green-600 rounded-2xl shadow p-6 hover:shadow-green-500 transition fade-in">
+        <h4 class="text-xl font-semibold mb-2 text-green-400">MilhasRadar</h4>
+        <p class="text-green-300 mb-4">Sistema de busca automática de passagens aéreas baratas com foco em milhas e promoções.</p>
+        <span class="inline-block bg-blue-800 px-3 py-1 text-sm rounded-full mb-3">Python / Web Scraping / Flask</span><br />
+        <a href="#" class="text-green-400 hover:underline">Em desenvolvimento</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="py-20 px-6 md:px-32">
+    <h3 class="text-4xl font-bold mb-8 text-center fade-in">Sobre Mim</h3>
+    <p class="text-green-300 text-lg leading-relaxed fade-in">
+      Sou um apaixonado por tecnologia e soluções práticas. Comecei minha carreira como operador de máquinas pesadas e hoje atuo como desenvolvedor web e criador de sistemas automatizados. Já desenvolvi bots de trading, buscadores de passagens, sites responsivos e plataformas online. Meu objetivo é sempre entregar sistemas que realmente funcionem, com foco em resultado e eficiência.
+    </p>
+    <p class="text-green-300 text-lg leading-relaxed mt-4 fade-in">
+      Estou disponível para projetos, freelas ou parcerias. Se você tem uma ideia e precisa tirá-la do papel, vamos conversar!
+    </p>
+    <div class="mt-10 text-center fade-in">
+      <form action="https://formsubmit.co/jhonesccmwm@gmail.com" method="POST" class="max-w-xl mx-auto">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Seu nome" required class="w-full mb-3 px-4 py-2 rounded bg-gray-900 text-green-300 placeholder-green-500">
+        <input type="email" name="email" placeholder="Seu e-mail" required class="w-full mb-3 px-4 py-2 rounded bg-gray-900 text-green-300 placeholder-green-500">
+        <textarea name="message" rows="4" placeholder="Sua mensagem" required class="w-full mb-3 px-4 py-2 rounded bg-gray-900 text-green-300 placeholder-green-500"></textarea>
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl shadow transition">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center text-green-500 text-sm py-8 border-t border-green-700">
+    © 2025 Marcos Xavier. Todos os direitos reservados.<br />
+    <span class="text-xs text-green-600">Este site é exclusivo de Marcos Xavier. Proibido copiar, reproduzir ou redistribuir sem autorização.</span>
+  </footer>
 </body>
 </html>
